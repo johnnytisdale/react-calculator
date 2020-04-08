@@ -1,0 +1,102 @@
+//calculator
+#react-calculator-jt {
+	margin: auto;
+	text-align: center;
+	width: 250px;
+
+	#display-container {
+		background-color: #c5c5ff;
+		border: 1px solid black;
+		border-bottom: 0;
+		padding-top: .75rem;
+		padding-bottom: .75rem;
+
+		#display {
+			text-align: right;
+			width: 86%;
+			margin: auto;
+			border: 1px solid black;
+			min-height: 5.5rem;
+			background-color: white;
+			position: relative;
+
+			#operation, #solution {
+				position: absolute;
+				width: 100%;
+				/*overflow: hidden;*/
+			}
+
+			#operation {
+				/*height: 33.33%;*/
+				text-align: right;
+				top: 0;
+				white-space: nowrap;
+				overflow-x: auto;
+			}
+
+			#solution {
+				/*height: 66.66%;*/
+				bottom: 0;
+				font-size: 2rem;
+			}
+		}
+	}
+
+	>.button-row {
+		display: flex;
+		flex-direction: row;
+
+		.button {
+			background-color: #e6e6ff;
+			border-left: 1px solid black;
+			border-top: 1px solid black;
+			padding: 0;
+			user-select: none;
+			-moz-user-select: none;
+			color: black;
+			font-size: 1rem;
+			width: 25%;
+
+			&:last-child {
+				border-right: 1px solid black;
+			}
+
+			&#react-calculator-equals {
+				width: 75%;
+			}
+		}
+
+		//last row
+		&:last-child {
+			border-bottom: 1px solid black;
+		}
+	}
+
+
+}
+
+
+
+#billted {
+	width: 100%;
+	text-align: center;
+}
+
+#excellent {
+	display: inline;
+	position: relative;
+	width: 1px;
+	z-index: 2;
+	opacity: 0;
+	top: -185px;
+}
+
+@media only screen and (min-width: 1367px) {
+	#react-calculator-jt .button:hover {
+		background-color: #e6ffff !important;
+	}
+
+	#react-calculator-jt .button:active {
+		background-color: #c5c5ff;
+	}
+}
