@@ -77,7 +77,7 @@ export default class Calculator extends Component {
 	render() {
 		
 		return (
-			<div id='react-calculator-jt'>
+			<div id='react-calculator'>
 				<Display
 					operation={this.displayOperation()}
 					solution={this.state.solution.display}
@@ -116,5 +116,5 @@ export default class Calculator extends Component {
 	
 }
 
-const wrapper = document.getElementById("container");
+const wrapper = document.getElementById('app');
 wrapper ? ReactDOM.render(<Calculator />, wrapper) : false;
