@@ -15,6 +15,7 @@
 			border: 1px solid black;
 			margin: auto;
 			min-height: 5.5rem;
+			overflow: hidden;
 			position: relative;
 			text-align: right;
 			width: 86%;
@@ -37,6 +38,32 @@
 				bottom: 0;
 				font-size: 2rem;
 				/*height: 66.66%;*/
+			}			
+
+			#bill-ted {
+				display: block;
+				height: auto;
+				left: 50%;
+				margin: auto;
+				position: absolute;
+				top: 50%;
+			  	transform: translate(-50%, -50%);
+			  	-ms-transform: translate(-50%, -50%);
+			  	width: 0%;
+			}
+
+			.bill-ted-animate {
+				animation: {
+					duration: 1s;
+					fill-mode: forwards;
+					iteration-count: 1;
+					name: bill-ted-animation;
+					timing-function: linear;
+				}
+			}
+
+			#bill-ted-excellent {
+				display: none;
 			}
 		}
 	}
@@ -76,21 +103,11 @@
 
 }
 
-/*
-#billted {
-	text-align: center;
-	width: 100%;
+@keyframes bill-ted-animation {
+	0% {width: 0%;}
+	50% {width: 100%;}
+	100% {width: 0%;}
 }
-
-#excellent {
-	display: inline;
-	opacity: 0;
-	position: relative;
-	top: -185px;
-	width: 1px;
-	z-index: 2;
-}
-*/
 
 @media only screen and (min-width: 1367px) {
 	#react-calculator .button:hover {

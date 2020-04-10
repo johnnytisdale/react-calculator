@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
+import billTed from '../bill-ted.jpg';
+import excellent from '../excellent.mp3';
 
 export default class Display extends React.Component {
 	
@@ -33,8 +35,12 @@ export default class Display extends React.Component {
 		return (
 			<div id='display-container'>
 				<div id="display">
-					<div id="operation">{this.props.operation}</div>
-					<div id="solution">{this.props.solution}</div>
+					<div id='operation'>{this.props.operation}</div>
+					<div id='solution'>{this.props.solution}</div>
+					<img id='bill-ted' src={billTed} />
+					<audio id='bill-ted-excellent' preload='auto' controls='false'>
+				    	<source src={excellent} />
+					</audio>
 				</div>
 			</div>
 		);

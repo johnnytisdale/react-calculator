@@ -16,6 +16,14 @@ module.exports = {
 				],
 			},
 			{
+				test: /\.(png|jpe?g|gif|mp3)$/i,
+				use: [
+					{
+						loader: 'file-loader',
+					},
+				],
+			},
+			{
 				test: /\.(js|jsx)$/,
 				exclude: /node_modules/,
 				use: {

@@ -9,6 +9,14 @@ export default function equals(data) {
 	operands.push(solution);
 	
 	let answer = this.operate(operands, this.state.operators);
+
+	if (answer.number == 'Infinity') {
+		let pic = document.getElementById('bill-ted');
+		let Class = 'bill-ted-animate';
+		pic.classList.add(Class);
+		setTimeout(() => { pic.classList.remove(Class); }, 1000);
+		(document.getElementById('bill-ted-excellent').play());
+	}
 	
 	this.setState({
 		lastButton: null,
