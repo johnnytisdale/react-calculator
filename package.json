@@ -1,6 +1,6 @@
 {
   "name": "react-calculator-jt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple calculator component.",
   "author": "Johnny Tisdale <johnnytisdale@gmail.com",
   "license": "ISC",
@@ -29,17 +29,17 @@
     "file-loader": "^6.0.0",
     "html-loader": "^1.1.0",
     "html-webpack-plugin": "^4.0.4",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "sass-loader": "^8.0.2",
+    "node-sass": "^9.0.0",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass-loader": "^13.3.2",
     "style-loader": "^1.1.3",
     "url-loader": "^4.1.0",
-    "webpack": "^4.42.1",
-    "webpack-cli": "^3.3.11"
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
   }
 }
